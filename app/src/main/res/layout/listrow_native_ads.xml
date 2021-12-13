@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vt_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/ll_ad_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="@string/admob_banner_id">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

@@ -1,0 +1,164 @@
+<resources>
+    <string name="ap_activity"> <![CDATA[
+class MyActivity : Activity()
+  <br/>{
+    <br/><br/>override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?)
+    <br/>{
+        <br/>super.onCreate(savedInstanceState, persistentState)
+        <br/>setContentView(R.layout.activity_main)
+    <br/>}
+
+    <br/><br/>override fun onResume() {
+        <br/>super.onResume()
+    <br/>}
+    <br/><br/>}]]></string>
+
+
+    <string name="ap_fragment"> <![CDATA[class MyFragment : Fragment()
+    <br/>{
+    <br/><br/>override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle): View? {
+        <br/>return inflater.inflate(R.layout.fragment_home, container, false)
+    <br/>}
+
+    <br/><br/>override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        <br/>super.onViewCreated(view, savedInstanceState)
+        <br/>val textView = view.findViewById(R.id.tv_mail) as TextView
+    <br/>}
+<br/><br/>}
+
+    ]]></string>
+
+
+    <string name="ap_service"> <![CDATA[class MyService : Service() {
+        <br/><br/>override fun onBind(intent: Intent): IBinder? {
+            <br/>return null
+        <br/>}
+
+        <br/><br/>override fun onStartCommand(intent: Intent, flags: Int, startId: Int): Int {
+            <br/>// Let it continue running until it is stopped.
+            <br/>Toast.makeText(this, &quot;Service Started&quot;, Toast.LENGTH_LONG).show()
+            <br/>return Service.START_STICKY
+        <br/>}
+
+        <br/><br/>override fun onDestroy() {
+            <br/>super.onDestroy()
+            <br/>Toast.makeText(this, &quot;Service Destroyed&quot;, Toast.LENGTH_LONG).show()
+        <br/>}
+    <br/><br/>}
+
+    ]]></string>
+    <string name="ap_alert_dialog"> <![CDATA[    fun showAlertDialog()
+    <br/>{
+        <br/><br/>val alertDialogBuilder = AlertDialog.Builder(activity)
+        <br/>alertDialogBuilder.setMessage(&quot;Are you sure, You wanted to make decision&quot;)
+        <br/><br/>alertDialogBuilder.setPositiveButton(&quot;yes&quot;
+        )
+        <br/>{
+        <br/>arg0, arg1 -> Toast.makeText(activity, &quot;You clicked yes button&quot;, Toast.LENGTH_LONG).show()
+        <br/>}
+
+        <br/><br/>alertDialogBuilder.setNegativeButton(&quot;No&quot;) <br/>{
+        <br/>dialog, which -> activity.finish()
+        <br/>}
+
+        <br/>val alertDialog = alertDialogBuilder.create()
+        <br/>alertDialog.show()
+    <br/>}
+
+    ]]></string>
+    <string name="ap_textview_edittext"> <![CDATA[val textView = view.findViewById(R.id.tv_mail) as TextView
+        <br/>textView.text = &quot;test@gmail.com&quot;
+        <br/>textView.setTextColor(ContextCompat.getColor(activity, R.color.colorPrimary))
+        <br/>textView.textSize = 20f
+
+        <br/><br/>val editText = view.findViewById(R.id.ed_name) as EditText
+        <br/>editText.setText(&quot;Ranjithkumar&quot;)
+        <br/>editText.requestFocus()
+        <br/>editText.error = &quot;Testing error msg&quot;
+
+    ]]></string>
+    <string name="ap_spinner"> <![CDATA[
+        <br/>//Spinner intialize
+        <br/>val spCountry = view.findViewById(R.id.sp_country) as Spinner
+        <br/><br/>//List of Strings
+        <br/>val countriesList = arrayOf(&quot;India&quot;, &quot;China&quot;, &quot;France&quot;)
+        <br/><br/>//Array Adapter
+        <br/>val arrayAdapter = ArrayAdapter(activity, android.R.layout.simple_expandable_list_item_1, countriesList)
+        <br/><br/>//Set Adapter
+        <br/>spCountry.adapter = arrayAdapter
+
+    ]]></string>
+
+
+    <string name="ap_shared_pref"> <![CDATA[
+    <br/>//Write
+    <br/>val sharedPref = activity.getSharedPreferences(&quot;MyPrefs&quot;, Context.MODE_PRIVATE)
+    <br/>val editor = sharedPref.edit()
+    <br/>editor.putString(&quot;Name&quot;, &quot;Ranjith&quot;)
+    <br/>editor.putString(&quot;Phone&quot;, &quot;99998888776&quot;)
+    <br/>editor.apply()
+    <br/><br/>//Read
+    <br/>val name = sharedPref.getString(&quot;Name&quot;, &quot;&quot;)
+    <br/>Log.d(TAG, &quot;Name: &quot; + name!!)]]></string>
+
+
+    <string name="ap_onclick"> <![CDATA[val textView = view.findViewById(R.id.tv_mail) as TextView
+
+        <br/>textView.setOnClickListener
+        <br/>{
+        <br/>Log.d(TAG, &quot;onClick: textview&quot;)
+        <br/>}
+]]></string>
+
+
+    <string name="ap_intent"> <![CDATA[fun startActivity(activity: Activity,  NextActivity: Class<*>) {
+    <br/>val i = Intent(activity, NextActivity)
+    <br/>i.putExtra(&quot;key1&quot;, &quot;testing1&quot;)
+    <br/>i.putExtra(&quot;key2&quot;, &quot;testing2&quot;)
+    <br/>activity.startActivity(i)
+    <br/>activity.finish()
+    <br/>}
+    ]]></string>
+
+
+    <string name="ap_switch_fragment"> <![CDATA[
+    fun switchFragment(containerId: Int, activity: Activity, fragment: Fragment) {
+    <br/>//ft -> fragmentTransaction
+    <br/>val ft = activity.fragmentManager.beginTransaction()
+    <br/>ft.replace(containerId, fragment, tag)
+    <br/>ft.commit()
+    <br/>}
+    <br/>]]></string>
+
+    <string name="ap_network_availablity"> <![CDATA[
+        fun isNetworkAvailable(context: Context): Boolean {
+        <br/>//cm -> connectivityManager
+        <br/>val cm = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        <br/><br/>val activeNetworkInfo = cm.activeNetworkInfo
+        <br/><br/>return activeNetworkInfo != null && activeNetworkInfo.isConnected
+    <br/>}
+    ]]></string>
+
+    <string name="ap_set_full_screen"> <![CDATA[
+        fun setFullScreen(activity: Activity) {
+        <br/>if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            <br/>activity.window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LAYOUT_STABLE or
+                    <br/>View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION or
+                    <br/>View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or
+                    <br/>View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or
+                    <br/>View.SYSTEM_UI_FLAG_FULLSCREEN or
+                    <br/>View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        <br/>}
+    <br/>}
+    ]]></string>
+
+    <string name="ap_hide_keyboard"> <![CDATA[
+    fun hideSoftKeyboard(activity: Activity) {
+    <br/>if (activity.currentFocus != null) {
+    <br/>val inputMethodManager = activity.getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+    <br/><br/>inputMethodManager.hideSoftInputFromWindow(activity.currentFocus!!.windowToken, 0)
+    <br/>}
+    <br/>}
+    ]]></string>
+
+</resources>

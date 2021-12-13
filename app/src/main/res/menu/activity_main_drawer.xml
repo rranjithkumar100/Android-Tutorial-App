@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_kotlin_basics"
+            android:icon="@drawable/kotlin"
+            android:title="@string/kotlin_basics"/>
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/news"
+            android:title="Tech News"/>
+
+
+        <item
+            android:id="@+id/nav_interview_qtns"
+            android:icon="@drawable/interview"
+            android:title="Kotlin Interview Qtns"/>
+        <item
+            android:id="@+id/nav_video_tutorial"
+            android:icon="@android:drawable/presence_video_away"
+            android:title="Kotlin Video Tutorial" />
+
+        <item
+            android:id="@+id/nav_android_video"
+            android:icon="@android:drawable/presence_video_away"
+            android:title="Android Video Tutorial" />
+        <item
+            android:id="@+id/nav_java_to_kotlin"
+            android:icon="@drawable/java"
+            android:title="@string/java_to_kotlin"/>
+        <item
+            android:id="@+id/nav_android_to_kotlin"
+            android:icon="@drawable/ic_android"
+            android:title="@string/android_to_kotlin"/>
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="@string/share"/>
+
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/ic_rate"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Privacy Policy"/>
+
+<!--        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedback"/>-->
+<!--        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+            android:title="@string/about"/>-->
+    </group>
+
+</menu>

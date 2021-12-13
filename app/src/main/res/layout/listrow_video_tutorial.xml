@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vt_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common_3dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/vt_iv_youtube_thumbnail"
+        android:scaleType="fitCenter"
+        app:layout_aspectRatio="178%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:id="@+id/vt_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/common_5dp"
+        android:layout_toRightOf="@+id/vt_iv_youtube_thumbnail"
+        android:textSize="@dimen/large_txt_size"
+        android:textStyle="bold" />
+</androidx.percentlayout.widget.PercentRelativeLayout>

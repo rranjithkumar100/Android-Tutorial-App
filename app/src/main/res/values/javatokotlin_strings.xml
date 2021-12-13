@@ -1,0 +1,281 @@
+<resources>
+
+
+    <string-array name="jk_data_types">
+
+        <item>Data types</item>
+        <item> <![CDATA[public class Test {
+  <br/>private int a = 10;
+  <br/>private float b = 5.5f;
+  <br/>private String name = &quot;Ranjith&quot;;
+  <br/>public String name2;
+  <br/>private static long c = 4334343434L;
+  <br/>private static final String TAG = &quot;Test&quot;;
+<br/>}]]>
+</item>
+
+        <item>
+             <![CDATA[class Test {
+   <br/>private val a = 10
+   <br/>private val b = 5.5f
+   <br/>private val name = &quot;Ranjith&quot;
+   <br/>var name2: String? = null
+
+   <br/>companion object {
+       <br/>private val c = 4334343434L
+       <br/>private val TAG = &quot;Test&quot;:
+   <br/>}
+<br/>}]]>
+</item>
+    </string-array>
+
+
+    <string-array name="jk_for_loop">
+        <item>For Loop</item>
+        <item><![CDATA[public static int sumOfNumbers(int number) {
+      <br/>int total = 0;
+      <br/>for (int i = 0; i < number; i++) {
+         <br/>total += i;
+      <br/>}
+      <br/>return total;
+    <br/>}]]>
+    </item>
+        <item><![CDATA[fun sumOfNumbers(number: Int): Int {
+       <br/>var total = 0
+       <br/>for (i in 0..number - 1) {
+           <br/>total += i
+       <br/>}
+       <br/>return total
+    <br/>}]]>
+    </item>
+    </string-array>
+
+    <string-array name="jk_switch_case">
+        <item>Switch</item>
+        <item><![CDATA[
+      public static void switchTesting(String employeeType) {
+      <br/>switch (employeeType){
+          <br/>case &quot;Developer&quot;:
+              <br/>System.out.print(&quot;I am Developer&quot;);
+              <br/>break;
+
+          <br/>case &quot;Tester&quot;:
+              <br/>System.out.println(&quot;I am Tester&quot;);
+              <br/>break;
+
+          <br/>default:
+              <br/>System.out.println(&quot;I am Default&quot;);
+              <br/>break;
+      <br/>}
+<br/>}]]></item>
+        <item><![CDATA[
+    fun switchTesting(employeeType: String) {
+   <br/>when (employeeType) {
+
+       <br/>&quot;Developer&quot; -> print(&quot;I am Developer&quot;)
+
+       <br/>&quot;Tester&quot; -> println(&quot;I am Tester&quot;)
+
+       <br/>else -> println(&quot;I am Default&quot;)
+   <br/>}
+<br/>}
+
+        ]]></item>
+
+    </string-array>
+
+
+    <string-array name="jk_exception_handling">
+        <item>Exception Handling</item>
+        <item><![CDATA[private String exceptionHandling(String test) {
+   <br/>String subString=null;
+   <br/>try {
+       <br/>subString = test.substring(0, 5);
+   <br/>}
+   <br/>catch (Exception e){
+       <br/>e.printStackTrace();
+   <br/>}
+   <br/>finally {
+       <br/>if(subString==null)
+           <br/>subString=&quot;&quot;;
+   <br/>}
+   <br/>return subString;
+<br/>}]]></item>
+        <item><![CDATA[private fun exceptionHandling(test: String): String {
+   <br/>var subString: String? = null
+   <br/>try {
+       <br/>subString = test.substring(0, 5)
+   <br/>} catch (e: Exception) {
+       <br/>e.printStackTrace()
+   <br/>} finally {
+       <br/>if (subString == null)
+           <br/>subString = &quot;&quot;
+   <br/>}
+   <br/>return subString
+<br/>}
+
+        ]]></item>
+    </string-array>
+
+
+    <string-array name="jk_enum">
+        <item>Enum</item>
+        <item><![CDATA[ private enum Workday {
+     <br/>MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY
+  <br/>}
+
+  <br/>private boolean isTomorrowLeave(Workday today) {
+     <br/>if (today == Workday.FRIDAY) {
+        <br/>System.out.println(&quot;Hurray! Tomorrow is weekend!&quot;);
+        <br/>return true;
+     <br/>}
+     <br/>return false;
+  <br/>}
+
+        ]]></item>
+        <item><![CDATA[    private enum class Workday {
+    <br/>MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY
+    <br/>}
+
+    <br/>private fun isTomorrowLeave(today: Workday): Boolean {
+    <br/>if (today == Workday.FRIDAY) {
+    <br/>println(&quot;Hurray! Tomorrow is weekend!&quot;)
+    <br/>return true
+    <br/>}
+    <br/>return false
+    <br/>}
+        ]]></item>
+    </string-array>
+
+
+    <string-array name="jk_constructor">
+        <item>Constructors</item>
+        <item><![CDATA[public class Testing
+<br/>{
+   <br/>public Testing()
+   <br/>{
+       <br/>System.out.println(&quot;This is a default constructor&quot;);
+   <br/>}
+<br/>}
+]]></item>
+
+        <item><![CDATA[class Testing {
+    <br/>//init is keyword to define constructor
+    <br/>init {
+    <br/>println(&quot;This is a default constructor&quot;)
+    <br/>}
+    <br/>}]]></item>
+    </string-array>
+
+
+    <string-array name="jk_inner_classes">
+        <item>Inner classes</item>
+        <item><![CDATA[public class OuterClass
+    <br/>{
+    <br/>public OuterClass()
+    <br/>{
+    <br/>InnerClass innerClass=new InnerClass();
+    <br/>System.out.println(&quot;Inner class Email: &quot;+innerClass.email);
+    <br/>}
+
+    <br/>private class InnerClass {
+    <br/>public InnerClass(){
+    <br/>System.out.println(&quot;Inner class Constructor&quot;);
+    <br/>}
+    <br/>public String email=&quot;ranjith@gmail.com&quot;;
+    <br/>}
+    <br/>}
+        ]]></item>
+
+        <item><![CDATA[class OuterClass {
+    <br/>init {
+        <br/>val innerClass = InnerClass()
+        <br/>println(&quot;Inner class Email: &quot; + innerClass.email)
+    <br/>}
+
+    <br/>private inner class InnerClass {
+        <br/>init {
+            <br/>println(&quot;Inner class Constructor&quot;)
+        <br/>}
+
+        <br/>var email = &quot;ranjith@gmail.com&quot;
+    <br/>}
+<br/>}
+        ]]></item>
+    </string-array>
+
+
+    <string-array name="jk_interface">
+        <item>Interface &amp; Implementation</item>
+        <item><![CDATA[public interface MyListener{
+  <br/>void myEvent(String result);
+<br/>}
+<br/>public class Testing implements MyListener {
+
+  <br/>@Override
+  <br/>public void myEvent(String result) {
+     <br/>System.out.println(&quot;Result: &quot;+result);
+  <br/>}
+<br/>}
+
+        ]]></item>
+        <item><![CDATA[interface MyListener {
+   <br/>fun myEvent(result: String)
+<br/>}
+<br/>class Testing : MyListener {
+
+   <br/>override fun myEvent(result: String) {
+       <br/>println(&quot;Result: &quot; + result)
+   <br/>}
+<br/>}
+       ]]></item>
+    </string-array>
+
+
+    <string-array name="jk_inheritance">
+        <item>Inheritance</item>
+        <item><![CDATA[public class Animal {
+  <br/>void eat() {
+     <br/>System.out.println(&quot;eating…&quot;);
+  <br/>}
+<br/>}
+<br/>public class Dog extends Animal{
+  <br/>void bark() {
+     <br/>super.eat();
+     <br/>System.out.println(&quot;barking…&quot;);
+  <br/>}
+<br/>}
+]]></item>
+        <item><![CDATA[open class Animal {
+   <br/>internal fun eat() {
+       <br/>println(&quot;eating…&quot;)
+   <br/>}
+<br/>}
+
+
+<br/>class Dog : Animal() {
+   <br/>internal fun bark() {
+       <br/>super.eat()
+       <br/>println(&quot;barking…&quot;)
+   <br/>}
+<br/>}
+
+        ]]></item>
+    </string-array>
+
+
+    <string-array name="jk_ternary">
+        <item>Ternary Operator</item>
+        <item><![CDATA[    private void ternaryOperator(int a,int b){
+    <br/>//syntax ==> result = testCondition ? value1 : value2
+
+    <br/><br/>int minVal = (a < b) ? a : b;
+    <br/>}]]></item>
+        <item><![CDATA[private fun ternaryOperator(a: Int, b: Int) {
+    <br/>//Kotlin not have ternary operator
+    <br/>//following line equal to ternary
+         <br/><br/>val minVal = if (a < b) a else b
+    <br/>}]]></item>
+    </string-array>
+
+</resources>

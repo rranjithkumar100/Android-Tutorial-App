@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BBD3</color>
+    <color name="colorPrimaryDark">#0096A6</color>
+    <color name="colorAccent">#795548</color>
+
+    <color name="about_background">#206271</color>
+    <color name="white">#ffffff</color>
+    <color name="list_pressed_color">#666666</color>
+    <color name="list_selected_color">#000000</color>
+    <color name="list_activated_color">#000000</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="Beige">#F5F5DC</color>
+    <color name="Wheat">#F5DEB3</color>
+    <color name="SandyBrown">#F4A460</color>
+
+    <color name="subtitle_color">#FF4081</color>
+    <color name="material_color1">#72CFB2</color>
+    <color name="material_color2">#FF8297</color>
+    <color name="material_color3">#A1887F</color>
+    <color name="material_color4">#FFA68F</color>
+    <color name="material_color5">#EF5350</color>
+    <color name="material_color6">#FFC107</color>
+</resources>

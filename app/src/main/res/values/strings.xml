@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Kotlin Android</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="admob_banner_id">ca-app-pub-9042663752523296/8172763769</string>
+    <string name="admob_intertial_id">ca-app-pub-9042663752523296/6556429764</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kotlin_basics">Kotlin Basics</string>
+    <string name="java_to_kotlin">Java To Kotlin</string>
+    <string name="android_to_kotlin">Android Programs</string>
+    <string name="faq">FAQ</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="about">About</string>
+    <string name="basics">Basics</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="packages">Packages</string>
+    <string name="basic_types">Basic Types</string>
+    <string name="coding_conventions">Coding Conventions</string>
+    <string name="idioms">Idioms</string>
+    <string name="kotlin_for_server_side">Kotlin For Server Side</string>
+    <string name="kotlin_for_android">Kotlin For Android</string>
+    <string name="basic_syntax">Basic Syntax</string>
+    <string name="return_and_jumps">Returns and Jumps</string>
+    <string name="loops_if_condition"><![CDATA[Loops & If condition]]></string>
+    <string name="exit_warning">Press once again to exit!</string>
+    <string name="classes_and_objects">Classes and Objects</string>
+
+    <string name="about_us_content"><![CDATA[Kotlin-Android is one of the most useful apps to learn Kotlin easily.\n\nAdvantages:\n1.Simple and Easy Tutorial\n2.Offline feature\n3.Java - Kotlin Comparision\n4.Learn sample programs\n5.Video Tutorials ]]></string>
+    <string name="version">Version :</string>
+    <string name="care_mail">rranjithkumar100@gmail.com</string>
+    <string name="warning_mail_app_not_found">"Gmail App not found!"</string>
+    <string name="mail_subject">Kotlin App Feedback</string>
+    <string name="developed_by">Developed By</string>
+    <string name="youtube_api_key">AIzaSyByqwkW5kE9iHckPdqvdJBO7qR02O3a8io</string>
+    <string name="sorry_n_news_not_available_now">Sorry!  \nNews not available now!</string>
+
+
+    <string name="erd_title">Rate this app</string>
+    <string name="erd_message">Hi, take a minute to rate this app and help support to improve more new features. ;)</string>
+    <string name="erd_no_thanks">No, thanks.</string>
+    <string name="erd_remind_me_later">Remind me later.</string>
+    <string name="erd_rate_now">Rate now.</string>
+    <string name="interview_qtn1">1. What is Kotlin?</string>
+    <string name="interview_qtn2">2. When Kotlin 1.0 Released?</string>
+    <string name="interview_qtn3">3. How do convert Java language code to Kotlin in Android studio?</string>
+    <string name="interview_qtn4">4. What is Data class?</string>
+    <string name="interview_qtn5">5. Can I use both Java files and Kotlin files in the same project?</string>
+    <string name="interview_qtn6">6. What\'s Kotlin\'s impact on APK size / method count?</string>
+    <string name="interview_qtn7a">7. In Java an array can be initialized such as:</string>
+    <string name="interview_qtn7b">int numbers[] = new int[] {10, 20, 30, 40, 50} How does Kotlin\'s array initialization look like?</string>
+    <string name="interview_qtn8">8. What is the equivalent of this expression in Kotlin?  a ? b : c</string>
+    <string name="interview_qtn9">9. What is the equivalent of Java static methods in Kotlin?</string>
+    <string name="interview_qtn10">10. What is difference between “Val” and “Var”?</string>
+    <string name="interview_qtn11">11. What is difference between “lazy” and “lateinit”?</string>
+    <string name="interview_qtn12">12. What advantages does Kotlin give me over the Java programming language?</string>
+    <string name="interview_qtn13">13. What is “!!” Operator?</string>
+    <string name="interview_qtn14">14. How to avoid ClassCastException in Kotlin?</string>
+    <string name="interview_qtn15"><![CDATA[15. What is Elvis Operator & its usage?]]></string>
+    <string name="interview_qtn16"><![CDATA[16. What is let keyword & its usage?]]></string>
+    <string name="interview_qtn17">17. How to filter the null values from list?</string>
+    <string name="interview_qtn18">18. What is the difference between List and Array types?</string>
+    <string name="interview_qtn19">19. What is the difference between “const” and “val”?</string>
+    <string name="interview_qtn20">20. How to check if a “lateinit” variable has been initialized?</string>
+    <string name="interview_ans1">Kotlin is a programming and development language from JetBrains. They\'re the folks behind the IntelliJ Java IDE and Kotlin is really, really interoperable with Java. That means developers can use the Java Libraries they already use now, and the code they write with Kotlin can also be converted to Java and vice versa.</string>
+    <string name="interview_ans2">Kotlin v1.0 was released on February 15, 2016.</string>
+    <string name="interview_ans3"><![CDATA[Open a Java file and select the code In menu bar click “Code”  ->  “Convert Java File to Kotlin File”.  Shortcut -> Ctrl + Alt + Shift + K]]></string>
+    <string name="interview_ans4">It\'s same as POJO class in Java. When we specify the data keyword in our class definition, Kotlin automatically generates field accessors, hashCode(), equals(), toString(), as well as the useful copy()   Ex: data class Employee(val name: String, val designation: String)  val employee: Employee = Employee(\"Ranjith\", \"Android Dev\")</string>
+    <string name="interview_ans4b"><![CDATA[print(employee.name) //It prints -> \"Ranjith\"]]></string>
+    <string name="interview_ans5">Yes. You can adopt as much or as little Kotlin as you like and mix it with Java code using Kotlin\'s interoperability with Java.</string>
+    <string name="interview_ans6">The Kotlin runtime adds about 7,000 methods and ~1MB to your debug APK. The net impact might be less if you use Kotlin to replace another library in your project, such as Guava or RxJava. This size also reduces when you optimize the APK for release with Proguard, just like other app code and libraries.</string>
+    <string name="interview_ans7">val numbers: IntArray = intArrayOf(10, 20, 30, 40, 50)</string>
+    <string name="interview_ans8">if (a) b else c</string>
+    <string name="interview_ans9">You place the function in the \"companion object\".   So the Java code like this:  class Foo {   public static int a() { return 1; } } will become in Kotlin  class Foo {   companion object {      fun a() : Int = 1   } }</string>
+    <string name="interview_ans10">var is like general variable and its known as a mutable variable in kotlin and can be assigned multiple times.  val is like constant variable and its known as immutable in kotlin and can be initialized only single time.</string>
+    <string name="interview_ans11"><![CDATA[lazy -> can only be used for val properties  lateinit -> can only be applied to var]]></string>
+    <string name="interview_ans12">Kotlin is more concise. Rough estimates indicate approximately a 40% cut in the number of lines of code. It’s also more type-safe, e.g. support for non-nullable types makes applications less prone to NPE’s. Other features including smart casting, higher-order functions, extension functions and lambdas with receivers provide the ability to write expressive code as well as facilitating creation of DSL.</string>
+    <string name="interview_ans13">!! operator also known as the not-null assertion, converts the nullable reference into its non-nullable type irrespective of whether it’s a null or not. This should be used only when you’re certain that the value is NOT NULL. Else it’ll lead to an NPE exception.  a = null println(a!!.length) // runtime error.  a = \"Hi\" print(a!!.length) //prints 2</string>
+    <string name="interview_ans14">The ? operator can be used for preventing ClassCastException.   var b : String =\"2\" var x : Int? =  b as? Int println(x) //prints null In the above code, we’re safe cast the variable b using as? If the cast isn’t successful, the value is set to null thereby preventing ClassCastException.</string>
+    <string name="interview_ans15">The Elvis operator ?: allows us to set a default value instead of the null as shown below. newString = null println(newString?.length?:\"-1\") //prints -1 The elvis operator is equivalent to the following:  if(newString!=null) { print(newString.length) } else{ print(\"-1\") }</string>
+    <string name="interview_ans16">let function executes the lamda function specified only when the reference is non-nullable as shown below.  newString = \" Kotlin from Android\" newString?.let { println(\"The string value is: $it\") } newString = null newString?.let { println(\"The string value is: $it\") } The statement inside let is a lamda expression. It’s only run when the value of newString is not null. it contains the non-null value of newString</string>
+    <string name="interview_ans17"><![CDATA[With help of filterNotNull()   Ex: var array2: Array<Any?> = arrayOf(\"1\", \"2\", \"3\", null) var newArray = array2.filterNotNull() println(newArray.size) //prints 3]]></string>
+    <string name="interview_ans18">Arrays have a fixed size. (Mutable)List can adjust their size dynamically.</string>
+    <string name="interview_ans19">consts are compile time constants. Meaning that their value has to be assigned during compile time, unlike vals, where it can be done at runtime.  This means, that consts can never be a assigned to a function or any class constructor, but only to a String or primitive.  For example:  const val foo = complexFunctionCall() //Wrong  val fooVal = complexFunctionCall() //Okay  const val bar = \"Hello world\" //Also okay</string>
+    <string name="interview_ans20">There is a lateinit improvement in Kotlin 1.2 that allows to check the initialization state of lateinit variable directly:  lateinit var file: File      if (::file.isInitialized) { ... }</string>
+    <string name="new_update_available">New update available</string>
+    <string name="pls_update">Please update from Play Store</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="internet_warning">Please check your internet connection</string>
+    <string name="share_subject">Very useful app for Learn Kotlin</string>
+    <string name="splash_txt">Kotlin-Android Tutorial</string>
+    <string name="java_to_kotlin1">Data types</string>
+    <string name="java_to_kotlin2">Enum</string>
+    <string name="java_to_kotlin3">For loop</string>
+    <string name="java_to_kotlin4">Switch case</string>
+    <string name="java_to_kotlin5">Exception handling</string>
+    <string name="java_to_kotlin6">Constructor</string>
+    <string name="java_to_kotlin7">Inheritance</string>
+    <string name="java_to_kotlin8">Interface</string>
+    <string name="java_to_kotlin9">Ternary Operator</string>
+    <string name="java">Java</string>
+    <string name="kotlin">Kotlin</string>
+
+</resources>

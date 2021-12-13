@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/listrow_tv_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/common_7dp"
+          android:background="@drawable/list_item_singleline_bg"
+          android:elevation="@dimen/common_5dp"
+          android:gravity="center_vertical"
+          android:minHeight="55dp"
+          android:padding="@dimen/common_10dp"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/colorPrimaryDark">
+
+</TextView>

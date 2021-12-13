@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>color_primary</key>
+        <value>#FE6C6F</value>
+    </entry>
+
+    <entry>
+        <key>color_primary_dark</key>
+        <value>#E42831</value>
+    </entry>
+
+    <entry>
+        <key>title_color</key>
+        <value>#000000</value>
+    </entry>
+
+
+    <entry>
+        <key>text_color</key>
+        <value>#000000</value>
+    </entry>
+
+    <entry>
+        <key>accent_color</key>
+        <value>#E42831</value>
+    </entry>
+
+    <entry>
+        <key>force_update</key>
+        <value>false</value>
+    </entry>
+
+</defaultsMap>
