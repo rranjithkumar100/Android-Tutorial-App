@@ -1,53 +1,38 @@
 {
   "project_info": {
-    "project_number": "440943200018",
-    "firebase_url": "https://project-4749810697349447992.firebaseio.com",
-    "project_id": "project-4749810697349447992",
-    "storage_bucket": "project-4749810697349447992.appspot.com"
+    "project_number": "44000018",
+    "firebase_url": "https://project-474997349447992.firebaseio.com",
+    "project_id": "project-474997349447992",
+    "storage_bucket": "project-474997349447992.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:440943200018:android:fa63aa6d5e0abe46",
+        "mobilesdk_app_id": "1:4409018:android:fa63a5e0abe46",
         "android_client_info": {
-          "package_name": "ranjith.firebasedemo"
+          "package_name": "ranjith.kotlin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "440943200018-uekle159afrijg6v8cpg6p3un4ravm1l.apps.googleusercontent.com",
+          "client_id": "4409018afrijg6v8cpg6p3un4ravm1l.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "ranjith.firebasedemo",
-            "certificate_hash": "6EB6330FD9C9E160854AB1249E35800450990644"
+            "package_name": "ranjith.kotlin",
+            "certificate_hash": "6EB6330FD9C9E163s34AB1249E35800450990644"
           }
         },
         {
-          "client_id": "440943200018-54ed9hfjssio1f5h2fq52q77ddb3264b.apps.googleusercontent.com",
+          "client_id": "your id",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyByqwkW5kE9iHckPdqvdJBO7qR02O3a8io"
+          "current_key": "your key"
         }
       ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "440943200018-54ed9hfjssio1f5h2fq52q77ddb3264b.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
+     
       }
     }
   ],
